@@ -9,7 +9,7 @@ import Foundation
 
 // структура под стандарт индентифицирования
 //неизменяемая структура
-struct ItemModel: Identifiable {
+struct ItemModel: Identifiable, Codable {
     let id: String
     let title: String
     let isCompleted: Bool

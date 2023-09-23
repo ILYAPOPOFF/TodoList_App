@@ -19,19 +19,35 @@ import Foundation
 
 class ListViewModel: ObservableObject {
     
-    @Published var items: [ItemModel] = []
+    @Published var items: [ItemModel] = [] {
+        didSet {
+            saveItem()
+        }
+    }
+    
+    
+    let itemsKey = "items_list"
     
     init() {
         getItems()
     }
     
     func getItems() {
-        let newItems = [
-            ItemModel(title: "This is the first title!", isCompleted: false),
-            ItemModel(title: "This is the second!", isCompleted: true),
-            ItemModel(title: "Third!", isCompleted: false),
-        ]
-        items.append(contentsOf: newItems)
+//        let newItems = [
+//            ItemModel(title: "This is the first title!", isCompleted: false),
+//            ItemModel(title: "This is the second!", isCompleted: true),
+//            ItemModel(title: "Third!", isCompleted: false),
+//        ]
+//        items.append(contentsOf: newItems)
+        
+        guard
+            //Проверям, есть ли у нас данные
+            let data = UserDefaults.standard.data(forKey: itemsKey),
+            //Проверяем, можем ли преобразовать данные в элементы
+            let savedItems = try? JSONDecoder().decode([ItemModel].self, from: data)
+        else { return }
+        
+        self.items = savedItems
     }
     
     //функция удаления ячейки
@@ -62,6 +78,12 @@ class ListViewModel: ObservableObject {
             items[index] = item.updateCompletion()
         }
         
+    }
+    
+    func saveItem() {
+        if let encoderData = try? JSONEncoder().encode(items) {
+            UserDefaults.standard.set(encoderData, forKey: itemsKey)
+        }
     }
     
 }
