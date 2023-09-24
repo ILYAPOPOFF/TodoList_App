@@ -10,6 +10,7 @@
 		09A267382ABEDB9D00BFC876 /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A267372ABEDB9D00BFC876 /* ItemModel.swift */; };
 		09A2673B2ABEE31500BFC876 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A2673A2ABEE31500BFC876 /* ListViewModel.swift */; };
 		09A2673D2AC075CF00BFC876 /* NotItemsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A2673C2AC075CF00BFC876 /* NotItemsView.swift */; };
+		09A2673F2AC096F400BFC876 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09A2673E2AC096F400BFC876 /* LaunchScreen.storyboard */; };
 		09AD29D82ABCD84C00A71CF0 /* TodoList_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AD29D72ABCD84C00A71CF0 /* TodoList_AppApp.swift */; };
 		09AD29DC2ABCD84E00A71CF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09AD29DB2ABCD84E00A71CF0 /* Assets.xcassets */; };
 		09AD29DF2ABCD84E00A71CF0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09AD29DE2ABCD84E00A71CF0 /* Preview Assets.xcassets */; };
@@ -22,6 +23,7 @@
 		09A267372ABEDB9D00BFC876 /* ItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemModel.swift; sourceTree = "<group>"; };
 		09A2673A2ABEE31500BFC876 /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
 		09A2673C2AC075CF00BFC876 /* NotItemsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotItemsView.swift; sourceTree = "<group>"; };
+		09A2673E2AC096F400BFC876 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		09AD29D42ABCD84C00A71CF0 /* TodoList_App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TodoList_App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09AD29D72ABCD84C00A71CF0 /* TodoList_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoList_AppApp.swift; sourceTree = "<group>"; };
 		09AD29DB2ABCD84E00A71CF0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 		09AD29DD2ABCD84E00A71CF0 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				09A2673E2AC096F400BFC876 /* LaunchScreen.storyboard */,
 				09AD29DE2ABCD84E00A71CF0 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
@@ -164,6 +167,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09A2673F2AC096F400BFC876 /* LaunchScreen.storyboard in Resources */,
 				09AD29DF2ABCD84E00A71CF0 /* Preview Assets.xcassets in Resources */,
 				09AD29DC2ABCD84E00A71CF0 /* Assets.xcassets in Resources */,
 			);
@@ -239,6 +243,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = NO;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -293,6 +298,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = NO;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -314,9 +320,11 @@
 				DEVELOPMENT_TEAM = F575BDA9FB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Todo List";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
@@ -344,9 +352,11 @@
 				DEVELOPMENT_TEAM = F575BDA9FB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Todo List";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;

@@ -25,10 +25,10 @@ struct NotItemsView: View {
                     .fontWeight(.semibold)
                 Text("Are you a productive person? I think you should click the add button a bunch of items to your todo list!")
                     .font(.footnote)
-                    .foregroundStyle(.black).opacity(0.6)
+                    .opacity(0.6)
                     .padding(.bottom, 20)
                 NavigationLink {
-                    
+                    AddView()
                 } label: {
                     Text("Add Something")
                         .foregroundStyle(.white)
@@ -47,6 +47,7 @@ struct NotItemsView: View {
                 .offset(y: animate ? -7 : 0)
 
             }
+            .frame(maxWidth: 400)
             .multilineTextAlignment(.center)
             .padding(40)
             .onAppear(perform: addAnimation)
